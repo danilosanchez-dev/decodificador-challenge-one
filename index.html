@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto - Challenge</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="./assets/logo.svg" alt="Logo">        
+    </header>
+    <main class="principal">
+        <h1 class="principal__titulo">Decodificador de Texto</h1>
+        <section class="principal__conteudo">
+            <input type="text" name="texto" class="principal__conteudo__texto" placeholder="Digite seu texto">
+            <p class="principal__conteudo__info">
+                <img src="./assets/info.svg" alt="info">
+                Apenas letras minúsculas e sem acento.
+            </p>
+            <div class="principal__conteudo__botoes">
+                <button class="principal__conteudo__botoes__criptografar" onclick="criptografar()">Criptografar</a>
+                <button class="principal__conteudo__botoes__descriptografar" onclick="descriptografar()">Descriptografar</a>
+            </div>
+        </section>
+        <aside class="principal__resultado">
+            <img class="principal__resultado__imagem" src="./assets/imagem.svg" alt="pessoa olhando com uma lupa">
+            <div class="principal__resultado__texto">
+                <h2 class="principal__resultado__texto__subtitulo">Nenhuma mensagem encontrada</h2>
+                <p class="principal__resultado__texto__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div> 
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
