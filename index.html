@@ -13,26 +13,25 @@
     <main class="principal">
         <h1 class="principal__titulo">Decodificador de Texto</h1>
         <section class="principal__conteudo">
-            <input type="text" name="texto" class="principal__conteudo__texto" placeholder="Digite seu texto">
+            <textarea class="principal__conteudo__texto" cols="40" rows="4" placeholder="Digite seu texto"></textarea>
             <p class="principal__conteudo__info">
                 <img src="./assets/info.svg" alt="info">
                 Apenas letras minúsculas e sem acento.
             </p>
             <div class="principal__conteudo__botoes">
-                <button class="principal__conteudo__botoes__criptografar" onclick="criptografar()">Criptografar</a>
-                <button class="principal__conteudo__botoes__descriptografar" onclick="descriptografar()">Descriptografar</a>
+                <button class="principal__conteudo__botoes__criptografar" onclick="btnCriptografar()">Criptografar</a>
+                <button class="principal__conteudo__botoes__descriptografar" onclick="btnDescriptografar()">Descriptografar</a>
             </div>
         </section>
-        <aside class="principal__resultado">
-            <img class="principal__resultado__imagem" src="./assets/imagem.svg" alt="pessoa olhando com uma lupa">
-            <div class="principal__resultado__texto">
-                <h2 class="principal__resultado__texto__subtitulo">Nenhuma mensagem encontrada</h2>
-                <p class="principal__resultado__texto__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </div> 
-        </aside>
+        <section class="principal__resultado">
+            <textarea class="principal__resultado__texto" cols="20" rows="10"></textarea>
+            <h2 class="principal__resultado__subtitulo">Nenhuma mensagem encontrada</h2>
+            <p class="principal__resultado__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button class="principal__resultado__copiar" onclick="btnCopiar()">Copiar</a>
+        </section>
     </main>
-    <footer>
-
+    <footer class="rodape">
+        <p class="rodape__paragrafo">Desenvolvido por Danilo Sanchez</p>
     </footer>
     <script src="./scripts/script.js"></script>
 </body>

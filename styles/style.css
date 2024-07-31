@@ -16,7 +16,7 @@
 
 body {
     box-sizing: border-box;
-    width: 1440px;
+    width: 100vw;
     background: var(--cor-fundo-pagina);
 }
 
@@ -44,10 +44,15 @@ body {
     font-size: 32px;
     border: none;
     padding: 80px 240px;
+    text-transform: lowercase;
 }
 
 .principal__conteudo__texto::placeholder {
-    color: var(--cor-fundo-botao-criptografar);
+    color: var(--cor-fundo-botao-criptografar)
+}
+
+.principal__conteudo__texto:focus {
+    outline: none;
 }
 
 .principal__conteudo__info {
@@ -99,30 +104,66 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 944px;
     background-color: #FFFFFF;
+    text-align: center;
+    gap: 16px;
     border-radius: 32px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.principal__resultado__imagem{
-    padding: 243px 32px 0px 32px;
+    
 }
 
 .principal__resultado__texto {
-    display: flex;
-    flex-direction: column;
-    padding: 32px;
-    text-align: center;
-    gap: 16px;
+    border:none;
+    margin-top: 243px;
+    padding: 0px 32px;
+    height: 304px;
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    color:#0A3871;
+    background-image: url(../assets/imagem.svg);
+    background-repeat: no-repeat;
 }
 
-.principal__resultado__texto__subtitulo {
+.principal__resultado__texto:focus {
+    outline: none;
+}
+
+.principal__resultado__subtitulo {
     font-family: var(--fonte-primaria);
     font-size: 24px;
 }
 
-.principal__resultado__texto__paragrafo {
+.principal__resultado__paragrafo {
     font-family: var(--fonte-primaria);
     font-size: 16px;
+}
+
+.principal__resultado__copiar {
+    margin: 32px auto;
+    width: 328px;
+    height: 67px;
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    color: #0A3871;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 24px;
+    border: 1px solid #0A3871
+}
+
+.rodape {
+    display: flex;
+    margin: 32px 0px 0px 0px;
+    height: 48px;
+    background-color: #0A3871;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape__paragrafo {
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    color:#FFFFFF;
+    text-align: center;
+    
 }
