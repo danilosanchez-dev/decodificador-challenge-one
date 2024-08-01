@@ -2,6 +2,7 @@ const textArea = document.querySelector('.principal__conteudo__texto');
 const mensagem = document.querySelector('.principal__resultado__texto');
 const mensagemInicialTitulo = document.querySelector('.principal__resultado__subtitulo');
 const mensagemInicialParagrafo = document.querySelector('.principal__resultado__paragrafo');
+const botaoCopiar = document.querySelector('.principal__resultado__copiar')
 
 
 function btnCriptografar(){
@@ -11,6 +12,7 @@ function btnCriptografar(){
     mensagem.style.setProperty('background-image', 'none');
     mensagemInicialTitulo.style.setProperty('display', 'none');
     mensagemInicialParagrafo.style.setProperty('display', 'none');
+    botaoCopiar.style.setProperty('display', 'block');
 }
 
 function criptografar(stringEncriptada){
@@ -35,6 +37,7 @@ function btnDescriptografar(){
     textArea.value = "";
     mensagemInicialTitulo.style.setProperty('display', 'none');
     mensagemInicialParagrafo.style.setProperty('display', 'none');
+    botaoCopiar.style.setProperty('display', 'block');
 }
 
 function descriptografar(stringDecriptada){
