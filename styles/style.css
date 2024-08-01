@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --cor-fundo-resultado: #FFFFFF;
-    --cor-fundo-pagina: #F3F5FC;
-    --cor-fundo-botao-criptografar: #0A3871;
-    --cor-fundo-botao-descriptografar: #D8DFE8;
-
+    
+    --cor-fundo-resultado: #EEEEEE;
+    --cor-fundo-pagina: #76ABAE;
+    --cor-fundo-botao-descriptografar:#31363F;
+    --cor-fundo-botao-criptografar: #222831;
+    
+    /*
+    --cor-fundo-resultado: #31363F;
+    --cor-fundo-pagina: #222831;
+    --cor-fundo-botao-descriptografar:#EEEEEE;
+    --cor-fundo-botao-criptografar: #76ABAE;
+    */
     --fonte-primaria: "Inter", sans-serif;;
 }
 
@@ -22,6 +29,29 @@ body {
 
 .cabecalho__logo {
     padding: 2.5rem;
+}
+
+.modo-cor {
+    padding: 0 5rem;
+    text-decoration: none;
+}
+
+.modo-cor__sol {
+    border: none;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: var(--cor-fundo-pagina);
+    color: var(--cor-fundo-botao-criptografar);
+}
+
+.modo-cor__lua {
+    border: none;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: var(--cor-fundo-pagina);
+    color: var(--cor-fundo-botao-criptografar);
 }
 
 .principal {
@@ -41,6 +71,7 @@ body {
 .principal__conteudo__texto {
     font-family: var(--fonte-primaria);
     background-color: var(--cor-fundo-pagina);
+    color: var(--cor-fundo-botao-criptografar);
     font-size: 2rem;
     border: none;
     padding: 5rem 15rem;
@@ -62,6 +93,7 @@ body {
     padding: 40rem 0rem 0rem 15rem;
     font-family: var(--fonte-primaria);
     font-size: 12px;
+    color: var(--cor-fundo-botao-criptografar);
 }
 
 .principal__conteudo__botoes {
@@ -80,7 +112,7 @@ body {
     height: 4.25rem;
     text-decoration: none;
     font-family: var(--fonte-primaria);
-    color: #FFFFFF;
+    color: var(--cor-fundo-pagina);
     background-color: var(--cor-fundo-botao-criptografar);
     font-size: 1rem;
     border-radius: 1.5rem;
@@ -95,7 +127,7 @@ body {
     height: 4.25rem;
     text-decoration: none;
     font-family: var(--fonte-primaria);
-    color: #0A3871;
+    color:var(--cor-fundo-pagina);
     background-color: var(--cor-fundo-botao-descriptografar);
     font-size: 1rem;
     border-radius: 1.5rem;
@@ -106,7 +138,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 25rem;
-    background-color: #FFFFFF;
+    background-color:var(--cor-fundo-resultado);
+    color: var(--cor-fundo-botao-criptografar);
     text-align: center;
     gap: 1rem;
     border-radius: 2rem;
@@ -121,7 +154,8 @@ body {
     height: 19rem;
     font-family: var(--fonte-primaria);
     font-size: 1.5rem;
-    color:#0A3871;
+    color:var(--cor-fundo-botao-criptografar);
+    background-color: var(--cor-fundo-resultado);
     background-image: url(../assets/imagem.svg);
     background-repeat: no-repeat;
 }
@@ -147,11 +181,11 @@ body {
     height: 4.25rem;
     text-decoration: none;
     font-family: var(--fonte-primaria);
-    color: #0A3871;
-    background-color: #FFFFFF;
+    color: var(--cor-fundo-botao-criptografar);
+    background-color: var(--cor-fundo-resultado);
     font-size: 1rem;
     border-radius: 1.5rem;
-    border: 1px solid #0A3871;
+    border: 1px solid var(--cor-fundo-botao-criptografar);
     display: none;
 }
 
@@ -159,7 +193,7 @@ body {
     display: flex;
     margin: 2rem 0rem 0rem 0rem;
     height: 3rem;
-    background-color: #0A3871;
+    background-color: var(--cor-fundo-botao-criptografar);
     align-items: center;
     justify-content: center;
 }
@@ -167,7 +201,7 @@ body {
 .rodape__paragrafo {
     font-family: var(--fonte-primaria);
     font-size: 1rem;
-    color:#FFFFFF;
+    color:var(--cor-fundo-resultado);
     text-align: center;
     
 }

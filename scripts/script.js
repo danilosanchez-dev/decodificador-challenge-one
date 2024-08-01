@@ -2,7 +2,8 @@ const textArea = document.querySelector('.principal__conteudo__texto');
 const mensagem = document.querySelector('.principal__resultado__texto');
 const mensagemInicialTitulo = document.querySelector('.principal__resultado__subtitulo');
 const mensagemInicialParagrafo = document.querySelector('.principal__resultado__paragrafo');
-const botaoCopiar = document.querySelector('.principal__resultado__copiar')
+const botaoCopiar = document.querySelector('.principal__resultado__copiar');
+let r = document.querySelector(':root');
 
 
 function btnCriptografar(){
@@ -60,4 +61,18 @@ function btnCopiar(){
     mensagemInicialParagrafo.innerHTML = 'Texto copiado para a área de transferência!';
     mensagemInicialParagrafo.style.removeProperty('display', 'none');
     navigator.clipboard.writeText(mensagem.value);
+}
+
+function modoClaro(){
+    r.style.setProperty('--cor-fundo-resultado', '#EEEEEE');
+    r.style.setProperty('--cor-fundo-pagina', '#76ABAE');
+    r.style.setProperty('--cor-fundo-botao-descriptografar', '#31363F');
+    r.style.setProperty('--cor-fundo-botao-criptografar', '#222831');
+}
+
+function modoEscuro(){
+    r.style.setProperty('--cor-fundo-resultado', '#31363F');
+    r.style.setProperty('--cor-fundo-pagina', '#222831');
+    r.style.setProperty('--cor-fundo-botao-descriptografar', '#EEEEEE');
+    r.style.setProperty('--cor-fundo-botao-criptografar', '#76ABAE');
 }
